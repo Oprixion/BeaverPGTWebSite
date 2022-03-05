@@ -10,6 +10,9 @@ h1{
     color: #3A36FF;
 }
 
+html,body {
+    margin: 0; 
+}
 /*----------------------------Common Atributes---------------------------------------------*/
 .navbar{
     background: #F5F7FE;
@@ -190,6 +193,53 @@ h1{
         transform: translateY(-8px) rotate(-45deg);
     }
 
+}
+/*---------------------Main Page----------------------*/
+.body_container{
+    
+    position: absolute;
+    top: 95px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-content: center;
+}
+
+.title_container{
+    
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 20%;
+    position: relative;
+}
+
+.topLine, .midLine{
+    color: #3A36FF;
+    font-size: 2.5rem;
+    
+}
+.bottomLine{
+    color: #3A36FF;
+}
+
+.o_letter{height: 1em;}
+
+.learnMore_btn{
+    margin: 5% auto;
+    display: block;
+    border-radius: 4px;
+    padding: 5px 50px;
+    background-color: #F5F7FE;
+    border: 1px solid #3A36FF;
+    color: #3A36FF;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.learnMore_btn:hover{
+    color: #F5F7FE;
+    background-color: #3A36FF;
 }
 
 /*---------------------About Us----------------------*/
