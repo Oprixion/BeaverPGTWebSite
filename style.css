@@ -9,6 +9,53 @@
 h1{
     color: #3A36FF;
 }
+/*------------------------------careers.html----------------------------------------------*/
+.background_container{
+    position: relative;
+    text-align: center;
+}
+
+.background_img{
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 100%; 
+}
+
+.background_text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+.below_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px
+}
+.why_petro{
+    font-style: italic;
+    font-size: 50px;
+    color: #3A36FF;
+    flex-basis: 40%;
+}
+.rectangle{
+    text-align: center;
+    height: 200px;
+    width: 600px;
+    border: 1px solid #3A36FF;
+    border-radius: 10%;
+    background-color: white;
+}
+.textbox{
+    margin-top: 65px;
+}
 
 /*----------------------------Common Atributes---------------------------------------------*/
 .navbar{
