@@ -223,6 +223,9 @@ tr td{
 }
 
 
+html,body {
+    margin: 0; 
+}
 /*----------------------------Common Atributes---------------------------------------------*/
 .navbar{
     background: #F5F7FE;
@@ -247,11 +250,13 @@ tr td{
 }
 
 #navbar_logo{
-    display: flex;
+    
     align-items:center;
     cursor: pointer;
     text-decoration: none;
     height: 100%;
+  
+    
 }
 
 .navbar_menu{
@@ -274,6 +279,7 @@ tr td{
     padding: 0 1.5rem;
     height: 100%;
     white-space: nowrap;
+    
 }
 
 .navbar_btn{
@@ -308,6 +314,7 @@ tr td{
 .navbar_links:hover{
     color: #1d1b83ff;
     transition: all 0.3s ease;
+    font-weight: bold;
 }
 
 @media screen and (max-width:900px){
@@ -317,7 +324,9 @@ tr td{
         height: 80px;
         z-index: 1;
         width: 100%;
+        max-width: 1300px;
         padding: 0;
+        background-color: #F5F7FE;
     }
 
     .navbar_menu{
@@ -327,19 +336,22 @@ tr td{
         width: 100%;
         position: absolute;
         top:-1000px;
-        opacity: 0;
+        opacity: 1;
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
+        
     }
 
     .navbar_menu.active{
+        background: #F5F7FE;
         top:100%;
         opacity: 1;
-        height: 0;
+        height: 60vh;
         transition: all 0.5s ease;
         z-index: 99;
         font-size: 1rem;
+        
     }
 
     #navbar_logo{
@@ -352,6 +364,7 @@ tr td{
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
         background: black;
+        
     }
 
     .navbar_item{
@@ -389,6 +402,7 @@ tr td{
         display: block;
         cursor: pointer;
         background-color: #3A36FF;
+        
     }
 
     #mobile-menu.is-active .bar:nth-child(2){
@@ -404,29 +418,147 @@ tr td{
     }
 
 }
-
-/*---------------------About Us----------------------*/
-.section1{
-    display: flex;
-    width: 100%;
-    height: 200px;
-    background-color: #F5F7FE;
-    
+/*---------------------Main Page----------------------*/
+.body_container{
+    position: absolute;
+    top: 95px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-content: center;
 }
 
-.s1_texts{
+.title_container{
+    
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 20%;
+    position: relative;
+}
+
+.topLine, .midLine{
+    color: #3A36FF;
+    font-size: 2.5rem;
+    
+}
+.bottomLine{
+    color: #3A36FF;
+}
+
+.o_letter{height: 1em;}
+
+.learnMore_btn{
+    margin: 5% auto;
+    display: block;
+    border-radius: 4px;
+    padding: 5px 50px;
+    background-color: #F5F7FE;
+    border: 1px solid #3A36FF;
+    color: #3A36FF;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.learnMore_btn:hover{
+    color: #F5F7FE;
+    background-color: #3A36FF;
+}
+
+/*---------------------About Us----------------------*/
+
+.section1, .section3{
+    display: flex;
+    width: 100%;
+    height: 30%;
+}
+
+.section2{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    background-color: #F5F7FE;
+    border: 1px solid #3A36FF;
+}
+
+.s1_texts, .s2_texts, .s3_texts{
     display: block;
     padding: 50px 10px;
 }
-.s1_image_container{
+.s1_image_container, .s3_image_container{
     background-color: #FFD66B;
     height: 100px;
     width: 100px;
     align-items: center;
     margin: 25px 10px;
 }
-.s1_image{
+.s1_image, .s3_image{
     height: 150px;
     width: 20%;
     object-fit: cover;
+}
+
+/*---------------------Services---------------*/
+.service_intro{
+    height: 50%;
+    text-align: center;
+    
+}
+.intro_texts{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+    padding-left: 15%;
+    padding-right: 15%;
+    height:200px;
+}
+.intro_texts::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel-item{
+    height: 20rem;
+    background: #777;
+    color: white;
+    position: relative;
+    
+}
+
+.carousel{
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-top: 25px;
+}
+
+.service_button{
+    background-color: #3A36FF;
+    width: 50%;
+    align-self: center;
+    margin-left: 25%;
+}
+
+.overlay-image{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+.service1_btn, .service2_btn, .service3_btn{
+    align-self: center;
+    width: 100%;
+    height: 40px;
 }
