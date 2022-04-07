@@ -151,6 +151,10 @@ h1{
     width: 80%;
     margin: 50px auto;
 }
+
+.contact-container p{
+    padding-top: 20px;
+}
 .contact-box{
     display: flex;
     margin-top: 50px;
@@ -183,6 +187,13 @@ input{
     border: 2px solid blue;
     width: 80%;
     padding: 10px;
+    background-color:rgb(242, 242, 255);
+    border-radius: 30px;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid rgb(155, 155, 252);
 }
 
 textarea{
@@ -190,6 +201,13 @@ textarea{
     border: 2px solid blue;
     outline: none;
     padding: 10px;
+    background-color:rgb(242, 242, 255);
+    border-radius: 30px;
+}
+
+textarea:focus{
+    outline: none;
+    border: 2px solid rgb(155, 155, 252);
 }
 
 button{
