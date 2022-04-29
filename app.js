@@ -5,3 +5,7 @@ menu.addEventListener('click', function(){
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
 })
+
+document.getElementById("learnMore_btn").onclick = function(){
+    location.href = "aboutUs.html"
+}
