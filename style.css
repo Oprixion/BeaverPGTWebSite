@@ -34,77 +34,67 @@ h1{
 }
 
 .below_container{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     padding-top: 50px;
     
 }
-.why_petro{
+why_petro{
     font-style: italic;
     font-size: 50px;
     color: #3A36FF;
     flex-basis: 40%;
-}
-.rectangle{
-    text-align: center;
-    height: 200px;
-    width: 600px;
-    border: 1px solid #3A36FF;
-    border-radius: 10%;
-    background-color: white;
-}
-.textbox{
-    margin-top: 65px;
+    padding-left: 5%;
 }
 
-/*<---------------------------Three Careers----------------------------------------------->*/
-.career1{
+
+span.rectangle {
     display: flex;
-    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    text-align: center; 
+    border-radius: 10%;
+    padding: 30px;
+    
+  }
+/*<---------------------------Three Careers----------------------------------------------->*/
+.career1, .career3{
+    display: flex;
+    width: 100%;
+    height: auto;
     justify-content: center;
-    position: sticky;
-    padding-top: 300px;
-    padding-bottom: 100px;
+    align-items: center;
 }
 
 .career2{
-    border: 1px solid blue;
-    background-color:rgb(242, 242, 255);
     display: flex;
-    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #F5F7FE;
+    border: 1px solid #3A36FF;
     justify-content: center;
-    position: sticky;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.career3{
-    display: flex;
     align-items: center;
-    justify-content: center;
-    position: sticky;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
-.logo{
-    width: 200px;
-    height: 200px;
+.c1_texts, .c2_texts, .c3_texts{
+    display: block;
+    padding: 50px 10px;
 }
 
-.desc{
-    padding-left: 100px;
-    padding-right: 100px;
-    height: 120px;
-    width: 1000px;
-    vertical-align: middle;
-    text-align: center;
+.c1_image, .c2_image, .c3_image{    
+    height: 100%;
+    max-height: 150px;
+    border-radius: 50%;
+    object-fit:fill;
 }
 
-.left{ float: left;}
-
-.right{ float: right;}
+@media screen and (max-width:900px){
+    .c1_image, .c2_image, .c3_image{
+        height: 0px;
+    }
+}
 
 /*<---------------------------------Experts----------------------------------------------->*/
 .name{
@@ -167,12 +157,21 @@ h1{
 
 .contact-right{
     background-color: rgb(242, 242, 255);
-    flex-basis: 40%;
+    flex-basis: 30%;
     padding: 40px;
-
 }
 
-
+@media screen and (max-width:900px){
+    .contact-right{
+        display: none;
+    }
+    .contact_table{
+        display: none;
+    }
+    .contact-left{
+        flex-basis: 100%;
+    }
+}
 .input-row{
     justify-content: space-between;
 }
@@ -543,14 +542,13 @@ html,body {
 
 /*---------------------Services---------------*/
 .service_intro{
+    margin-top: auto;
     height: 50%;
     text-align: center;
     
 }
 .intro_texts{
-    margin: 0;
-    position: absolute;
-    top: 50%;
+    margin-top: 10rem;
     -ms-transform: translateY(-25%);
     transform: translateY(-25%);
     padding-left: 15%;
