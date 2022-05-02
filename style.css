@@ -114,6 +114,8 @@ h1{
     display: flex;
     width: 100%;
     height: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .expert2, .expert4{
@@ -122,6 +124,8 @@ h1{
     height: auto;
     background-color: #F5F7FE;
     border: 1px solid #3A36FF;
+    justify-content: center;
+    align-items: center;
 }
 
 .e1_texts, .e2_texts, .e3_texts, .e4_texts{
