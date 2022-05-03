@@ -161,17 +161,7 @@ span.rectangle {
     padding: 40px;
 }
 
-@media screen and (max-width:900px){
-    .contact-right{
-        display: none;
-    }
-    .contact_table{
-        display: none;
-    }
-    .contact-left{
-        flex-basis: 100%;
-    }
-}
+
 .input-row{
     justify-content: space-between;
 }
@@ -209,7 +199,7 @@ textarea:focus{
     border: 2px solid rgb(155, 155, 252);
 }
 
-button{
+.submit_btn{
     display: block;
     background-color: blue;
     width: 100px;
@@ -221,6 +211,7 @@ button{
     border-radius: 30px;
     box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
 }
+
 button:hover{
     background-color: #FFD66B;
     transition: all 0.3s ease;
@@ -242,6 +233,18 @@ tr td{
 
 html,body {
     margin: 0; 
+}
+
+@media screen and (max-width:900px){
+    .contact-right{
+        display: none;
+    }
+    .contact_table{
+        display: none;
+    }
+    .contact-left{
+        flex-basis: 100%;
+    }
 }
 /*----------------------------Common Atributes---------------------------------------------*/
 .navbar{
