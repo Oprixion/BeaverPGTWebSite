@@ -131,7 +131,7 @@ span.rectangle {
 }
 
 @media screen and (max-width:900px){
-    .e1_image, .e2_image, .e3_image{
+    .e1_image, .e2_image, .e3_image, .e4_image{
         height: 0px;
     }
 }
@@ -212,7 +212,7 @@ textarea:focus{
     box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
 }
 
-button:hover{
+.submit_btn:hover{
     background-color: #FFD66B;
     transition: all 0.3s ease;
 
@@ -470,15 +470,14 @@ html,body {
 
 .learnMore_btn{
     margin: 5% auto;
-    padding: 10px 50px;
+    display: block;
     border-radius: 4px;
-    width: auto;
+    padding: 5px 50px;
     background-color: #F5F7FE;
     border: 1px solid #3A36FF;
     color: #3A36FF;
     font-size: 1rem;
     cursor: pointer;
-    
 }
 
 .learnMore_btn:hover{
