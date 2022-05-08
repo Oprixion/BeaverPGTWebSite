@@ -491,6 +491,8 @@ html,body {
     display: flex;
     width: 100%;
     height: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .section2{
@@ -499,45 +501,67 @@ html,body {
     height: auto;
     background-color: #F5F7FE;
     border: 1px solid #3A36FF;
+    justify-content: center;
+    align-items: center;
 }
 
 .s1_texts, .s2_texts, .s3_texts{
     display: block;
     padding: 50px 10px;
 }
-.s1_image_container, .s3_image_container{
-    background-color: #FFD66B;
-    height: auto;
-    width: auto;
-    max-height: 200px;
-    max-width: 200px;
-    align-items: center;
-    margin: 25px 10px;
-}
-.s2_image_container{
-    float: right;
-    background-color: #FFD66B;
-    height: auto;
-    width: auto;
-    max-height: 200px;
-    max-width: 200px;
-    align-items: center;
-    margin: 25px 10px;
-}
-.s1_image, .s3_image{    
+
+.s1_image, .s2_image, .s3_image{    
     height: 100%;
+    max-height: 200px;
     object-fit:fill;
 }
-.s2_image{
-    height: 100%;
-    object-fit:fill;
-}
+
 @media screen and (max-width:900px){
     .s1_image_container, .s2_image_container, .s3_image_container{
         width: 0px;
         height: 0px;
     }
     .s1_image, .s2_image, .s3_image{
+        height: 0px;
+    }
+}
+
+/*-------------------------------Investors---------------------------*/
+.investor1, .investor3{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.investor2{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #F5F7FE;
+    border: 1px solid #3A36FF;
+    justify-content: center;
+    align-items: center;
+}
+
+.i1_texts, .i2_texts, .i3_texts{
+    display: block;
+    padding: 50px 10px;
+}
+
+.i1_image, .i2_image, .i3_image{    
+    height: 100%;
+    max-height: 200px;
+    object-fit:fill;
+}
+
+@media screen and (max-width:900px){
+    .i1_image_container, .i2_image_container, .i3_image_container{
+        width: 0px;
+        height: 0px;
+    }
+    .i1_image, .i2_image, .i3_image{
         height: 0px;
     }
 }
